@@ -3,7 +3,7 @@ import pythonbible
 import random
 
 
-openai.api_key = "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"
+openai.api_key = ""
 messages = [{"role":"system", "content":"You will respond with the same style that the bible is written in."}]
 messages.append({"role":"user", "content":"please generate a fake bible verse as if could be found somewhere in the bible."})
 chat = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)
